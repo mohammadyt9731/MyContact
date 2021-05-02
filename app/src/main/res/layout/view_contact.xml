@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_very_small"
+    android:layout_marginBottom="@dimen/space_very_small"
+    android:layout_marginRight="@dimen/space_medium"
+    android:layout_marginLeft="@dimen/space_medium"
+    android:background="@drawable/lv_background"
+
+    >
+
+    <ImageView
+        android:id="@+id/iv_contact_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:padding="@dimen/space_very_small"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_contact_picture" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_small"
+        android:layout_marginTop="@dimen/space_large"
+        app:layout_constraintLeft_toRightOf="@id/iv_contact_image"
+        app:layout_constraintTop_toTopOf="@id/iv_contact_image"
+        android:textSize="@dimen/text_size_xLarge"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Mohammad yazdi">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_very_small"
+        app:layout_constraintLeft_toLeftOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/black"
+        android:text="09157973269">
+
+    </TextView>
+
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+
+    >
+
+
+
+    <TextView
+        android:id="@+id/add_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_contact"
+        android:textStyle="bold"
+        android:padding="@dimen/space_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/green__900"
+        android:textSize="@dimen/text_size_2xLarge"
+        android:gravity="center"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_contact_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="@dimen/space_very_small"
+        app:layout_constraintTop_toBottomOf="@id/add_contact"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/space_small"
+        android:background="@drawable/ic_contact_picture" >
+
+    </ImageView>
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/iv_contact_image"
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_large"
+        android:hint="@string/name"
+       android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/teal_700"
+        />
+    <EditText
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        android:id="@+id/et_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_large"
+        android:hint="@string/phone_number"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:textColorHint="@color/teal_700"
+        />
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_xLarge"
+
+        app:layout_constraintTop_toBottomOf="@id/et_phone_number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_cancel"
+        android:layout_marginBottom="@dimen/space_large"
+        android:layout_marginLeft="@dimen/space_large"
+        android:layout_marginRight="@dimen/space_small"
+        android:textSize="@dimen/text_size_xLarge"
+        android:padding="@dimen/space_medium"/>
+
+    <TextView
+
+        android:id="@+id/tv_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_add"
+        app:layout_constraintBottom_toBottomOf="@id/tv_add"
+        app:layout_constraintLeft_toRightOf="@id/tv_add"
+        android:layout_marginRight="@dimen/space_large"
+        android:layout_marginLeft="@dimen/space_small"
+
+        android:textSize="@dimen/text_size_xLarge"
+        android:padding="@dimen/space_medium"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

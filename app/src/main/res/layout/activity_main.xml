@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+    
+    <Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/green__500"
+        android:layout_gravity="top"
+        >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/app_name"/>
+        
+        
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?actionBarSize"
+    android:paddingTop="@dimen/space_medium"
+
+    android:id="@+id/rv_contacts">
+    
+</androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="@dimen/space_medium"
+        android:elevation="20dp"
+        android:backgroundTint="@color/green__500"
+        android:src="@drawable/ic_plus"
+        app:backgroundTintMode="screen"
+        android:id="@+id/floating_btn_add_contact"/>
+
+
+    <FrameLayout
+        android:layout_marginTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:layout_height="match_parent"
+        android:id="@+id/fl_fragment_container"/>
+    
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
